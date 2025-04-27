@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="name" content="Заитов Сардор"
+  <meta name="description" content="ШоуДан - платформа для аренды мероприятий, покупки билетов и организации шоу.">
+  <meta name="keywords" content="шоу, аренда, билеты, театры, концерты, мероприятия, шоу дан, show dan, showdan, шоудан">
+
+  <title>ShowDan</title>
+  <link rel="stylesheet" href="styles copy.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="icon" type="image/x-icon" href="pictures/лого.ico">
+</head>
+<body>
+
+  <!-- 🔝 Шапка / Навигация -->
+  <header>
+    <div class="main-header">
+      <h1 class="logo">ShowDan</h1>
+      <div class="burger" onclick="toggleMenu()" aria-label="Открыть меню">
+        <svg width="28" height="28" viewBox="0 0 100 80" fill="#ffffff">
+          <rect width="100" height="10" rx="5"></rect>
+          <rect y="30" width="100" height="10" rx="5"></rect>
+          <rect y="60" width="100" height="10" rx="5"></rect>
+        </svg>
+      </div>
+      <nav class="main-nav" id="mainNav">
+        <a href="#">Главная</a>
+        <a href="#">О нас</a>
+        <a href="#">Наши услуги</a>
+        <a href="#">Контакты</a>
+      </nav>
+      <div class="menu-overlay" onclick="closeMenu()"></div>
+    </div>
+  </header>
+
+  <!-- 💥 Главная секция -->
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Добро пожаловать на ShowDan</h2>
+      <p>От футуристичных шоу до высокотехнологичных перформансов — мы делаем впечатления незабываемыми.</p>
+      <button class="btn-primary">Начать</button>
+    </div>
+    <div class="hero-categories">
+      <button class="btn-secondary">Театр</button>
+      <button class="btn-secondary">Балет</button>
+      <button class="btn-secondary">Концерты</button>
+      <button class="btn-secondary">Выставки</button>
+    </div>
+  </section>
+
+  <section class="about-us">
+    <div class="about-inner">
+      <div class="about-image">
+        <img src="pictures/dan.jpg" alt="Организация мероприятий">
+      </div>
+      <div class="about-text">
+        <h2>О нас</h2>
+        <h3>Мы создаём атмосферу, которую невозможно забыть</h3>
+        <p>
+          Наша команда — это креативные продюсеры, режиссёры, дизайнеры и технические специалисты, объединённые одной целью: превратить любое событие в незабываемое шоу. 
+          Мы работаем как с частными клиентами, так и с крупными компаниями, помогая им выразить свою идею через идеально организованное мероприятие.
+        </p>
+        <p id="about-text">
+          В нашей работе мы сочетаем <strong>стратегию</strong>, <strong>дизайн</strong> и <strong>эмоции</strong>, чтобы добиться максимального вовлечения гостей. От камерных вечеринок до масштабных форумов — 
+          мы знаем, как оставить впечатление, которое останется в памяти надолго.
+        </p>
+        <a href="#services" class="btn-primary" id="about-btn">Узнать больше</a>
+      </div>
+
+      <div class="about-stats">
+          <div class="stat-box">
+            <span class="number">10+ <br></span>
+            <span class="label">лет на рынке</span>
+          </div>
+          <div class="stat-box">
+            <span class="number">500+ <br></span>
+            <span class="label">мероприятий</span>
+          </div>
+          <div class="stat-box">
+            <span class="number">120 000+ <br></span>
+            <span class="label">гостей</span>
+          </div>
+          <div class="stat-box">
+            <span class="number">100% <br></span>
+            <span class="label">довольных клиентов</span>
+          </div>
+        </div>
+
+    </div>
+  </section>
+  
+
+  <!-- 📂 Категории / Секции -->
+  <section class="categories">
+    <h2>Наши услуги</h2>
+    <p>Вас ждёт множество интересных событий. Ознакомьтесь ниже</p>
+
+    <div class="category-cards category-scroll-wrapper">
+      <div class="card">
+        <img src="pictures/group.jpg" alt="Артист 1">
+        <h3>Артисты</h3>
+        <p>Наши талантливые артисты оживляют сцену: от театральных постановок до музыкальных перформансов. Каждый выступающий — это голос, движение и энергия, которая вдохновляет и соединяет.</p>
+
+        <button class="btn-primary">Подробнее</button>
+      </div>
+      <div class="card">
+        <div class="venom">
+          <img id="cameraman" src="pictures/photo.png" alt="Артист 2"> 
+        </div>
+        <h3>Фото и видео</h3>
+        <p>Мы запечатлеваем лучшие моменты — будь то яркие события, закулисье или творческий процесс. Качественные фотографии и видео помогают сохранить атмосферу и эмоции навсегда.</p>
+
+        <button class="btn-primary">Подробнее</button>
+      </div>
+      <div class="card">
+        <img src="pictures/magic.jpg" alt="Артист 3">
+        <h3>Шоу</h3>
+        <p>Незабываемые выступления, свет, звук и эмоции — мы создаём шоу, которое захватывает с первых секунд. Каждое выступление — это синтез артистизма, технологий и энергии сцены.</p>
+
+        <button class="btn-primary">Подробнее</button>
+      </div>
+      <div class="card">
+        <img src="pictures/zurich_tent_stage.jpg" alt="Артист 3">
+        <h3>Оборудование</h3>
+        <p>Современное световое, звуковое и сценическое оборудование — залог качественного мероприятия. Мы обеспечим техническое сопровождение на высшем уровне, от настройки до финального аплодисмента.</p>
+        <button class="btn-primary">Подробнее</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🧱 Особенности / преимущества -->
+  <section class="features">
+    <h2>Наши преимущества</h2>
+    <p>Мы убрали лишнюю суету и оставили только удобство</p>
+    <div class="feature-boxes">
+      <div class="feature">
+        <h3>Креативность</h3>
+        <p>Возможность адаптировать мероприятие под любую тематику или запрос клиента.</p>
+      </div>
+      <div class="feature">
+        <h3>Собственное оборудование</h3>
+        <p>Сцены, свет, звук, спецэффекты — экономия бюджета клиента.</p>
+      </div>
+      <div class="feature">
+        <h3>Чёткая организация</h3>
+        <p>Работа по таймингам, без задержек и срывов.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="participants">
+    <h2>Наши участники</h2>
+    <div class="mosaic">
+      <div class="participant">
+        <img src="pictures/singer.png" alt="Участник 1">
+        <div class="overlay">
+          <h3>Ведущий</h3>
+          <a href="участник1.html" class="btn-primary">Подробнее</a>
+        </div>
+      </div>
+      <div class="participant tall">
+        <img src="pictures/dj.png" alt="Участник 2">
+        <div class="overlay">
+          <h3>DJ</h3>
+          <a href="участник2.html" class="btn-primary">Подробнее</a>
+        </div>
+      </div>
+      <div class="participant wide">
+        <img src="pictures/more.png" alt="Участник 3">
+        <div class="overlay">
+          <h3>Остальные</h3>
+          <a href="участник3.html" class="btn-primary">Подробнее</a>
+        </div>
+      </div>
+      <!-- Добавляй дальше -->
+    </div>
+  </section>
+  
+
+  <!-- 📞 Подвал -->
+  <footer class="footer">
+    <div class="footer-container">
+      
+      <div class="footer-column">
+        <h2 class="footer-logo">ShowDan</h2>
+        <p>Погружаем в атмосферу будущего: шоу, артисты, технологии.</p>
+      </div>
+  
+      <div class="footer-column">
+        <h3>Навигация</h3>
+        <ul>
+          <li><a href="#">Главная</a></li>
+          <li><a href="#">Услуги</a></li>
+          <li><a href="#">Наши участники</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-column">
+        <h3>Контакты</h3>
+        <p>Email: <a href="mailto:bogshowdan@gmail.com">bogshowdan@gmail.com</a></p>
+        <p>Телефон: <a href="tel:+998936139966">+998 93 613 99 66</a></p>
+      </div>
+
+      <div class="footer-column">
+        <h3>Мы в соц-сетях</h3>
+        <div class="footer-socials">
+          <a href="https://www.instagram.com/showdan_organization?igsh=MW96anBnOHB3a3VkZA=="><i class="fab fa-instagram"></i></a>
+          <a href="https://t.me/ShowDanBot"><i class="fab fa-telegram-plane"></i></a>
+          <!-- <a href="#"><i class="fab fa-youtube"></i></a> -->
+        </div>
+      </div>
+  
+    </div>
+  
+    <div class="footer-bottom">
+      <p>&copy; 2025 ShowDan. Все права защищены.</p>
+    </div>
+  </footer>  
+  
+  <script src="scripts.js"></script>
+
+  <script src="https://kit.fontawesome.com/your-kit-id.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
